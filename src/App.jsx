@@ -1,20 +1,21 @@
 
 import './App.css';
-import { Navbar } from './Navbar';
-import {Home} from './Home';
-import { Footer } from './Footer';
-
-
+import { ItemList } from './components/ItemList/ItemList';
+import { Navbar } from './components/Navbar/Navbar';
 
 function App() {
-  
+
+  let saludo = "Hola juancito como estas"
+  let edad = 25
+
   return (
     <div className="App">
-      <Navbar />
-      <Home />
-      <Footer />
+      <Navbar color="blue" />
+      <ItemList saludo={saludo} edad={edad} />
     </div>
   );
 }
 
 export default App;
+
+
