@@ -1,12 +1,28 @@
 import React from 'react';
-import './Footer.css';
 
-function Footer() {
+function Header() {
   return (
-    <footer className="footer">
-      <p>&copy; 2023 My Ecommerce App. All rights reserved.</p>
-    </footer>
+    <header>
+      <nav>
+        <a href="#home">My Ecommerce App</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label htmlFor="nav-toggle">
+          <span></span>
+        </label>
+        <ul>
+          <li>
+            <a href="#products">Products</a>
+          </li>
+          <li>
+            <a href="#about">About Us</a>
+          </li>
+          <li>
+            <a href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 }
 
-export default Footer;
+export default Header;

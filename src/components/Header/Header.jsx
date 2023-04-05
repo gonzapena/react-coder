@@ -1,19 +1,27 @@
 import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
 
 function Header() {
   return (
-    <Navbar bg="light" expand="lg">
-      <Navbar.Brand href="#home">My Ecommerce App</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-          <Nav.Link href="#products">Products</Nav.Link>
-          <Nav.Link href="#about">About Us</Nav.Link>
-          <Nav.Link href="#contact">Contact Us</Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+    <header>
+      <nav>
+        <a href="#home">My Ecommerce App</a>
+        <input type="checkbox" id="nav-toggle" />
+        <label htmlFor="nav-toggle">
+          <span></span>
+        </label>
+        <ul>
+          <li>
+            <a href="#products">Products</a>
+          </li>
+          <li>
+            <a href="#about">About Us</a>
+          </li>
+          <li>
+            <a href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 }
 

@@ -1,7 +1,9 @@
 import React from 'react';
-import Products from './components/Products';
-import Footer from './components/Footer';
+import Products from './components/Products/Product.jsx';
+import Footer from './components/Footer/Footer.jsx';
+import Header from './components/Header/Header.jsx';
 import './App.css';
+
 
 function App() {
   return (
@@ -15,10 +17,12 @@ function App() {
           <h1>My Ecommerce App</h1>
         </div>
       </header>
-      <Products />
-      <Footer />
+      <Products className="Product"/>
+      <Footer lassName="Footer"/>
     </div>
   );
 }
 
 export default App;
+
+
